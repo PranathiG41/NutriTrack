@@ -1,0 +1,189 @@
+/*body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color:linear-gradient(135deg, rgb(150, 247, 187), rgb(55, 150, 131));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}*/
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  background: linear-gradient(135deg, rgba(142, 228, 175, 0.95), rgba(55, 150, 131, 0.95));
+backdrop-filter: blur(6px);
+
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*
+.container, .card {
+    background-color:#ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 40px;
+    width: 780px;
+    text-align: center;
+}*/
+.container {
+  position: relative;
+  background: #ffffff; /* inner container color stays white */
+  border-radius: 15px;
+  padding: 40px;
+  width: 780px;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid transparent; /* transparent base border */
+  background-clip: padding-box; /* keeps inner content inside */
+}
+
+/* Shining gradient border */
+.container::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 18px; /* slightly bigger than container */
+  background: linear-gradient(90deg, #7fffd4, #00ffaa, #7fffd4, #00ffaa);
+  z-index: -1;
+  background-size: 300%;
+  animation: shine 4s linear infinite;
+}
+
+/* Keyframes for moving shine */
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+
+
+h1 {
+    color: #24126a;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #cde3db;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #1b7a61;
+    box-shadow: 0 0 5px rgba(27, 122, 97, 0.3);
+}
+
+/*button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1b7a61;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #23a178;
+}*/
+button {
+  position: relative;
+  background: #fff;
+  color: #2c786c;
+  width: 500px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease, background 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #7fffd4, #00ffaa, #7fffd4, #00ffaa);
+  border-radius: 10px;
+  z-index: -1;
+  background-size: 300%;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+button:hover {
+  background: #2c786c;
+  color: #1d0808d7;
+}
+
+
+label {
+    font-size: 14px;
+    color: #0a6d68;
+}
+
+ul {
+    text-align: left;
+    padding-left: 15px;
+    line-height: 1.8;
+    color: #333;
+}
+
+p {
+    color: #444;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1b7a61;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #23a178;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #cde3db;
+    margin: 15px 0;
+}

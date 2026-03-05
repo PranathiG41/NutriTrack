@@ -1,0 +1,72 @@
+{
+  "weight_loss": {
+    "vegetarian": {
+      "breakfast": ["Oats with fruits", "Green tea"],
+      "lunch": ["Brown rice with dal", "Salad"],
+      "dinner": ["Vegetable soup", "Grilled paneer"],
+      "avoid": ["Sugar", "Fried foods", "White bread"]
+    },
+    "non_vegetarian": {
+      "breakfast": ["Boiled eggs", "Oats with milk"],
+      "lunch": ["Grilled chicken", "Brown rice"],
+      "dinner": ["Fish with vegetables"],
+      "avoid": ["Processed meat", "Soda", "Deep-fried food"]
+    }
+  },
+  "muscle_gain": {
+    "vegetarian": {
+      "breakfast": ["Paneer sandwich", "Banana smoothie"],
+      "lunch": ["Rajma with rice", "Soy chunks"],
+      "dinner": ["Chapati with dal and curd"],
+      "avoid": ["Sugary drinks", "Junk food"]
+    },
+    "non_vegetarian": {
+      "breakfast": ["Egg omelette", "Peanut butter toast"],
+      "lunch": ["Chicken breast with rice"],
+      "dinner": ["Fish curry and boiled eggs"],
+      "avoid": ["Alcohol", "Fried chicken"]
+    }
+  },
+  "healthy_skin": {
+    "vegetarian": {
+      "breakfast": ["Oats with almonds and berries", "Green smoothie"],
+      "lunch": ["Quinoa salad", "Vegetable curry with brown rice"],
+      "dinner": ["Lentil soup", "Spinach roti"],
+      "avoid": ["Refined sugar", "Spicy food", "Oily snacks"]
+    },
+    "non_vegetarian": {
+      "breakfast": ["Scrambled eggs with avocado", "Orange juice"],
+      "lunch": ["Grilled salmon with veggies"],
+      "dinner": ["Chicken soup", "Mixed salad"],
+      "avoid": ["Processed meats", "Fried foods", "Excess salt"]
+    }
+  },
+  "hair_growth": {
+    "vegetarian": {
+      "breakfast": ["Sprouts and milk", "Dry fruits"],
+      "lunch": ["Dal, spinach, and brown rice"],
+      "dinner": ["Paneer curry with chapati"],
+      "avoid": ["Excess sugar", "Junk food"]
+    },
+    "non_vegetarian": {
+      "breakfast": ["Boiled eggs and fruits"],
+      "lunch": ["Fish curry and rice"],
+      "dinner": ["Egg salad and soup"],
+      "avoid": ["Alcohol", "Fried items"]
+    }
+  },
+  "acne_reduction": {
+    "vegetarian": {
+      "breakfast": ["Oats with honey", "Green tea"],
+      "lunch": ["Vegetable pulao, Dal, and cucumber salad"],
+      "dinner": ["Soup and whole wheat chapati"],
+      "avoid": ["Dairy", "Fried foods", "Sugary items"]
+    },
+    "non_vegetarian": {
+      "breakfast": ["Egg white omelette", "Fruit smoothie"],
+      "lunch": ["Grilled chicken with veggies"],
+      "dinner": ["Fish soup and salad"],
+      "avoid": ["Dairy", "Processed foods", "Sugar"]
+    }
+  }
+}

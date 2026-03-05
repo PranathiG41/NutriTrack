@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Personalized Diet Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>🍃 Personalized Plan for {{ user.name.title() }}</h1>
+        <p><b>Age:</b> {{ user.age }} | <b>Gender:</b> {{ user.gender }}</p>
+        <p><b>Height:</b> {{ user.height }} cm | <b>Weight:</b> {{ user.weight }} kg</p>
+        <p><b>Goal:</b> {{ user.goal }} | <b>Diet Type:</b> {{ user.diet_type }}</p>
+
+        <hr>
+        <ul>
+            <li><strong>Breakfast:</strong> {{ meal_plan['breakfast'] | join(', ') }}</li>
+            <li><strong>Lunch:</strong> {{ meal_plan['lunch'] | join(', ') }}</li>
+            <li><strong>Dinner:</strong> {{ meal_plan['dinner'] | join(', ') }}</li>
+            <li><strong>Foods to Avoid:</strong> {{ meal_plan['avoid'] | join(', ') }}</li>
+        </ul>
+        <hr>
+
+        <p>💡 Eat balanced meals, hydrate well, and stay active for the best results!</p>
+
+        <a class="btn" href="/">← Back to Home</a>
+    </div>
+</body>
+</html>

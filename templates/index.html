@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🥗 AI-Based Personalized Diet Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🥗 AI-Based Personalized Diet Planner</h1>
+        <form method="POST" action="/get-plan">
+            <input type="text" name="name" placeholder="Enter your name" required><br>
+            <input type="number" name="age" placeholder="Age" required><br>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select><br>
+            <input type="number" name="height" placeholder="Height (cm)" required><br>
+            <input type="number" name="weight" placeholder="Weight (kg)" required><br>
+
+            <label>Goal:</label><br>
+            <select name="goal" required>
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>Healthy Skin</option>
+                <option>Hair Growth</option>
+                <option>Acne Reduction</option>
+            </select><br>
+
+            <label>Diet Type:</label><br>
+            <select name="diet_type" required>
+                <option>Vegetarian</option>
+                <option>Non_Vegetarian</option>
+            </select><br>
+
+            <button type="submit">Generate Plan</button>
+        </form>
+    </div>
+</body>
+</html>
